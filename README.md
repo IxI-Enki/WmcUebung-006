@@ -1,5 +1,6 @@
-###### <p align="center"> WmcUebung-004 </p>
+###### <p align="center"> WmcUebung-006 </p>
 
+<!--
 - ### *To test my javascript skills i first made myself a "playground environment"*:
 
 <div align="center">
@@ -19,5 +20,5 @@
 
   <img src ="./img/script.png" alt="javascript + lightmode" width=80%>
 </div>
-
+-->
 ---
