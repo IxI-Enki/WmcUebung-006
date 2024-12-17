@@ -6,3 +6,4 @@
 /.vs/WmcUebung-004/FileContentIndex
 /.vs
 /json-server/node_modules/.bin
+/http-server/node_modules/.bin
