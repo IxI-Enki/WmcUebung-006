@@ -45,14 +45,17 @@ always)* accessed via the internet.
    - ### Authority Component
      Not all schemes require a `//`.  
      The `http` in a URL is always followed by `://`.  
-     ##### All URLs have the colon, but the `//` part is only included for schemes that have an ***authority component***.   
+     ##### All URLs have the colon, but the `//` part is only included for schemes that have an ***authority component***. 
+  
      > The authority component of a URL typically includes the user information (*optional*), host (*domain name or IP address*), and port (*optional*).  
      ##### For example: 
      > in [`http://username:password@example.com:8080/path`](http://username:password@example.com:8080/path), the authority component is `username:password@example.com:8080`
      ---
    - ### Ports
       - The port in a URL is a *virtual point* where ***network connections*** are made.  
-      - Ports are managed by a computer's operating system and are numbered from `0` to `65.535`          > (Though port `0` is reserved for the system API).       ##### For example:
+      - Ports are managed by a computer's operating system and are numbered from `0` to `65.535` 
+         > (Though port `0` is reserved for the system API).
+       ##### For example:
        > <div align="center">
        >
        >  |    Port  | short   | Usage                            | 
@@ -104,7 +107,8 @@ always)* accessed via the internet.
       ---   
    - ### Querry parameters
      In the context of websites, query parameters are often used for marketing analytics or for changing a variable on the web page.  
-     With website URLs, query parameters rarely change which page you're viewing, though they often will change the page's contents.
+     With website URLs, query parameters rarely change which page you're viewing, though they often will change the page's contents.
+
      ##### For example: 
       > In [`https://www.google.com/search?q=hello+universe`](https://www.google.com/search?q=hello+universe) the searchparameters are `?q=hello+universe`
 
@@ -122,10 +126,11 @@ always)* accessed via the internet.
   <summary>Beispielhafte Fragen</summary>
 
   - #### 1.) Was ist ein URI und wie unterscheidet er sich von einer URL?
-    > Ein URI ist ein allgemeiner Begriff f¸r Identifikatoren. Eine URL ist eine spezielle Art von URI, die zus‰tzlich den Speicherort einer Ressource angibt.        
+    > Ein URI ist ein allgemeiner Begriff f√ºr Identifikatoren. Eine URL ist eine spezielle Art von URI, die zus√§tzlich den Speicherort einer Ressource angibt.
+        
   - #### 2.) Welche Teile kann eine URL enthalten und welche sind optional?
     > Teile einer URL: Protokoll, Domain, Port (optional), Pfad, Query-Parameter (optional), Fragment (optional).
   
   - #### 3.) Wie werden Query-Parameter in URLs verwendet?
-    > Query-Parameter f¸gen zus‰tzliche Informationen zur Anfrage hinzu, z.B. ?name=John&id=123.
+    > Query-Parameter f√ºgen zus√§tzliche Informationen zur Anfrage hinzu, z.B. ?name=John&id=123.
 </details>
