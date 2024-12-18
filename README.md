@@ -115,3 +115,17 @@ always)* accessed via the internet.
   
     <img src ="./img/urlOb.png" alt="URL-JS" width=80%>
   </div>
+
+---
+
+<details>
+  <summary>Beispielhafte Fragen</summary>
+
+  - #### 1.) Was ist ein URI und wie unterscheidet er sich von einer URL?
+    > Ein URI ist ein allgemeiner Begriff für Identifikatoren. Eine URL ist eine spezielle Art von URI, die zusätzlich den Speicherort einer Ressource angibt.        
+  - #### 2.) Welche Teile kann eine URL enthalten und welche sind optional?
+    > Teile einer URL: Protokoll, Domain, Port (optional), Pfad, Query-Parameter (optional), Fragment (optional).
+  
+  - #### 3.) Wie werden Query-Parameter in URLs verwendet?
+    > Query-Parameter fügen zusätzliche Informationen zur Anfrage hinzu, z.B. ?name=John&id=123.
+</details>
