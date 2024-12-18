@@ -23,12 +23,12 @@ always)* accessed via the internet.
 
   | Part            | Required                         | Description                                                        |  
   | :--             | :-:                              | :-----                                                             |  
-  | Protocol/Scheme | Yes                              | Indicates the protocol to be used (e.g. `http`, `https`, `ftp`). |
+  | Protocol/Scheme | Yes                              | Indicates the protocol to be used (e.g. `http`, `https`, `ftp`).  |
   | Username        | No                               | Optional user information for authentication.                      |
   | Password        | No                               | Optional password for authentication.                              |
   | Domain          | Yes                              | Specifies the domain name or IP address of the server.             |
-  | Port            | No <sub><sub>(*defaults* to `80` or `443`)</sub></sub> | Specifies the port number.                                         |
-  | Path            | No <sub><sub>(*defaults* to `/` )</sub></sub>          | The path to the resource on the server.                            |
+  | Port            | No <sub><sub>(*defaults* to `80` or `443`)</sub></sub> | Specifies the port number.                   |
+  | Path            | No <sub><sub>(*defaults* to `/` )</sub></sub>          | The path to the resource on the server.      |
   | Query           | No                               | Contains data to be sent to the server.                            |
   | Fragment        | No                               | Points to a specific part of the resource                          |
   
@@ -107,3 +107,11 @@ always)* accessed via the internet.
      With website URLs, query parameters rarely change which page you're viewing, though they often will change the page's contents.
      ##### For example: 
       > In [`https://www.google.com/search?q=hello+universe`](https://www.google.com/search?q=hello+universe) the searchparameters are `?q=hello+universe`
+
+---
+
+- ### URL in JavaScript 
+  <div align="center">
+  
+    <img src ="./img/urlOb.png" alt="URL-JS" width=80%>
+  </div>
