@@ -33,7 +33,7 @@ always)* accessed via the internet.
   | Fragment        | No                               | Points to a specific part of the resource                          |
   
   </div>
- 
+
    - ### Protocol/Scheme
 
      ##### For example: 
@@ -41,15 +41,16 @@ always)* accessed via the internet.
      > - https
      > - ftp
      > - mailto
-      
+     ---
+   - ### Authority Component
      Not all schemes require a `//`.  
      The `http` in a URL is always followed by `://`.  
      ##### All URLs have the colon, but the `//` part is only included for schemes that have an ***authority component***.   
      > The authority component of a URL typically includes the user information (*optional*), host (*domain name or IP address*), and port (*optional*).  
      ##### For example: 
      > in [`http://username:password@example.com:8080/path`](http://username:password@example.com:8080/path), the authority component is `username:password@example.com:8080`
-
-    - ### Ports
+     ---
+   - ### Ports
       - The port in a URL is a *virtual point* where ***network connections*** are made.  
       - Ports are managed by a computer's operating system and are numbered from `0` to `65.535`          > (Though port `0` is reserved for the system API).       ##### For example:
        > <div align="center">
@@ -68,43 +69,37 @@ always)* accessed via the internet.
        >  | `5432`   |         | PostgreSQL Database              |
        >  | `6379`   |         | Redis                            |
        > </div>
-
-    - ### Query Parameters
----
-
-- ### URL Paths
-  On static sites (like blogs or documentation sites) a URL's path mirrors the server's filesystem hierarchy.  
-
-  ##### For example: 
-   > *if* the website [`https://exampleblog.com`](https://exampleblog.com) had a **static web server** running in its `/home` directory,  
-   > then a **request** to [`https://exampleblog.com/site/index.html`](https://exampleblog.com/site/index.html) would *probably* **return** the **file** located **at `/home/site/index.html`**.  
-
-  ***<p align="center"> But technically, this is just a convention.</p>***
-  > *The server could be configured to return any file or data given that path.*  
-
-  - Paths in ***URL***s are essentially just another *type of parameter that can be passed to the server when making a request*.  
-  - For dynamic sites and web applications, the path is often used to denote a specific resource or endpoint.
+     ---   
+   - ### Paths
+     On static sites (like blogs or documentation sites) a URL's path mirrors the server's filesystem hierarchy.  
  
-  ---
-  
-  - #### Path conventions
-  
-    Many static websites (websites where the content does not change, as opposed to dynmaic web applications) use paths as a direct mapping to the path to the server's file system.   
-
-    ##### For example: 
-     > If I was running a static web server for "mystaticstate.com" from the root of my file system, a **GET request** to 
-   [`http://mystaticstate.com/documents/hello.txt`](http://mystaticstate.com/documents/hello.txt) would *serve the file at* `/documents/hello.txt` from my server.  
+     ##### For example: 
+      > *if* the website [`https://exampleblog.com`](https://exampleblog.com) had a **static web server** running in its `/home` directory,  
+      > then a **request** to [`https://exampleblog.com/site/index.html`](https://exampleblog.com/site/index.html) would *probably* **return** the **file** located **at `/home/site/index.html`**.  
  
-    #### *<p align="center"> Most dynamic web applications don't use this simple mapping of URL path -> file path.</p>*
-
-    > Technically, a URL path is just a string that the web server can do what it wants with, and modern websites take advantage of that flexibility.  
-
-      - #### Some common examples of what paths are used for include:
-
-        - The hierarchy of pages on a website, whether or not that reflects a server's file structure 
-        - Parameters passed into an HTTP request, like the ID of a resource 
-        - The version of the API
-        - The type of resource being requested
-
----
+     ***<p align="center"> But technically, this is just a convention.</p>***
+     > *The server could be configured to return any file or data given that path.*  
  
+     - Paths in ***URL***s are essentially just another *type of parameter that can be passed to the server when making a request*.  
+     - For dynamic sites and web applications, the path is often used to denote a specific resource or endpoint.
+ 
+   - #### Path conventions
+     
+       Many static websites (websites where the content does not change, as opposed to dynmaic web applications) use paths as a direct mapping to the path to the server's file system.   
+
+     ##### For example: 
+       > If I was running a static web server for "mystaticstate.com" from the root of my file system, a **GET request** to 
+      [`http://mystaticstate.com/documents/hello.txt`](http://mystaticstate.com/documents/hello.txt) would *serve the file at* `/documents/hello.txt` from my server.  
+
+       #### *<p align="center"> Most dynamic web applications don't use this simple mapping of URL path -> file path.</p>*
+
+      > Technically, a URL path is just a string that the web server can do what it wants with, and modern websites take advantage of that flexibility.  
+
+       - #### Some common examples of what paths are used for include:
+ 
+           - The hierarchy of pages on a website, whether or not that reflects a server's file structure 
+           - Parameters passed into an HTTP request, like the ID of a resource 
+           - The version of the API
+           - The type of resource being requested
+      ---   
+   - ### Querry parameters
