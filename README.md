@@ -106,4 +106,4 @@ always)* accessed via the internet.
      - In the context of websites, query parameters are often used for marketing analytics or for changing a variable on the web page.  
      - With website URLs, query parameters rarely change which page you're viewing, though they often will change the page's contents.
     ##### For example: 
-      >  In [`https://www.google.com/search?q=hello+universe`](https://www.google.com/search?q=hello+universe) the searchparameters are `?q=hello+universe`
+     > In [`https://www.google.com/search?q=hello+universe`](https://www.google.com/search?q=hello+universe) the searchparameters are `?q=hello+universe`
